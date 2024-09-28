@@ -1738,9 +1738,10 @@ hr {
 }
 
 .cs_bg_filed {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 20px;
 }
 
 .cs_vertical_middle {
@@ -9763,4 +9764,8 @@ html .ui-button.ui-state-disabled:active {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center; */
+}
+
+.design-image {
+  border-radius: 5px;
 }

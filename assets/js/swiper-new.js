@@ -14,6 +14,7 @@ const swiper = new Swiper(".swiper-new", {
 
   pagination: {
     el: ".swiper-new-pagination",
+    clickable: true,
     dynamicBullets: true,
   },
 
@@ -38,5 +39,39 @@ const swiper = new Swiper(".swiper-new", {
       slidesPerView: 3,
       spaceBetween: 50,
     },
+  },
+});
+
+const mySwiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  direction: "horizontal",
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  scrollbar: {
+    el: ".mySwiper-scrollbar",
+    hide: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // mousewheel: true,
+  keyboard: true,
+
+  pagination: {
+    el: ".mySwiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  scrollbar: {
+    el: ".swiper-new-scrollbar",
   },
 });

@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/swiper.min.css" /> -->
     <link rel="stylesheet" href="assets/css/odometer.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body class="cs_dark">
     <div class="cursor" id="client_cursor">View</div>
@@ -346,7 +350,7 @@
       </div>
       <div class="position-relative">
         <div class="container">
-          <div class="cs_slider cs_slider_4">
+          <div class="mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="cs_portfolio cs_style_2">
@@ -355,11 +359,6 @@
                     data-src="assets/img/homepage/1.png"
                   ></div>
                   <div class="cs_portfolio_text">
-                    <!-- <h3
-                      class="cs_portfolio_minititle cs_fs_16 cs_secondary_color cs_medium"
-                    >
-                      React Development
-                    </h3> -->
                     <h2 class="cs_portfolio_title cs_fs_68">
                       <a href="#">Design and<br />Development </a>
                     </h2>
@@ -392,11 +391,6 @@
                     data-src="assets/img/homepage/2.jpg"
                   ></div>
                   <div class="cs_portfolio_text">
-                    <!-- <h3
-                      class="cs_portfolio_minititle cs_fs_16 cs_secondary_color cs_medium"
-                    >
-                      UI/UX Design
-                    </h3> -->
                     <h2 class="cs_portfolio_title cs_fs_68">
                       <a href="#">Software Categories</a>
                     </h2>
@@ -429,11 +423,6 @@
                     data-src="assets/img/homepage/3.jpg"
                   ></div>
                   <div class="cs_portfolio_text">
-                    <!-- <h3
-                      class="cs_portfolio_minititle cs_fs_16 cs_secondary_color cs_medium"
-                    >
-                      3D Render
-                    </h3> -->
                     <h2 class="cs_portfolio_title cs_fs_68">
                       <a href="#">Hardware Categories </a>
                     </h2>
@@ -460,11 +449,11 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
-        <div
-          class="cs_number_pagination cs_primary_font cs_fs_29 cs_semibold"
-        ></div>
       </div>
       <div class="cs_height_150 cs_height_lg_80"></div>
     </section>
@@ -711,7 +700,7 @@
         </div>
         <div class="cs_height_85 cs_height_lg_45"></div>
       </div>
-      <div class="cs_slider cs_slider_1">
+      <div class="swiper-new">
         <div class="swiper-wrapper">
           <div class="swiper-slide" data-swiper-autoplay="2000" autoplay>
             <div class="cs_team cs_style_1 hardware">
@@ -870,7 +859,10 @@
           </div>
         </div>
 
-        <div class="cs_pagination cs_style_1"></div>
+        <!-- <div class="cs_pagination cs_style_1"></div> -->
+        <div class="d-flex justify-content-center mt-4">
+          <div class="swiper-new-pagination"></div>
+        </div>
         <div class="cs_height_50 cs_height_lg_30"></div>
         <div class="text-center">
           <a href="#" class="cs_btn cs_style_1"
@@ -1376,7 +1368,7 @@
         </div>
         <div class="cs_height_85 cs_height_lg_45"></div>
       </div>
-      <div class="cs_slider cs_slider_1">
+      <div class="swiper-new">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div
@@ -1476,7 +1468,10 @@
             </div>
           </div>
         </div>
-        <div class="cs_pagination cs_style_1"></div>
+        <!-- <div class="cs_pagination cs_style_1"></div> -->
+        <div class="d-flex justify-content-center mt-4">
+          <div class="swiper-new-pagination"></div>
+        </div>
       </div>
       <div class="cs_height_150 cs_height_lg_80"></div>
     </section>
@@ -1818,10 +1813,11 @@
     <!-- End Scroll Up -->
 
     <!-- Script -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
+    <!-- <script src="assets/js/swiper.min.js"></script> -->
+    <script src="assets/js/swiper-new.js"></script>
     <script src="assets/js/odometer.js"></script>
     <script src="assets/js/ripples.min.js"></script>
     <script src="assets/js/isotope.pkg.min.js"></script>

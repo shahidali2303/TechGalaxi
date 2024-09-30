@@ -9803,3 +9803,16 @@ html .ui-button.ui-state-disabled:active {
   /* padding: 30px; */
   color: #fd6219 !important;
 }
+.table-header {
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fd6219;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+.list-card {
+  border: 2px solid #fd6219;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}

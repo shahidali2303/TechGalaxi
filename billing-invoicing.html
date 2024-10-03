@@ -33,6 +33,70 @@
       <span class="cs_perloader_text">Loading...</span>
     </div>
     <!-- End Preloader -->
+
+    <!-- Modalstart  -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+      data-bs-theme="dark"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Let's Get Connected
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="form-floating mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name"
+                />
+                <label for="floatingInput">Your Full Name</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="floatingNumber"
+                  placeholder="Mobile Number"
+                />
+                <label for="floatingNumber">Mobile Number</label>
+              </div>
+              <button type="submit" class="cs_btn cs_style_1 cs_btn_accent">
+                Send <span><i class="fa-solid fa-arrow-right"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal ends -->
+
     <!-- Start Header Section -->
     <header
       class="cs_site_header cs_style_1 cs_color_1 cs_sticky_header cs_primary_color"
@@ -247,7 +311,7 @@
     </div> -->
     <!-- End Counter -->
 
-    <!-- feature section old start -->
+    <!-- popular choice section old start -->
     <!-- <div class="container">
       <div class="cs_height_100 cs_height_lg_60"></div>
       <div class="cs_product_meta_info">
@@ -419,9 +483,9 @@
         </div>
       </div>
     </div> -->
-    <!-- feature section ends -->
+    <!-- popular choice ends -->
 
-    <!-- feature section start -->
+    <!-- popular choice start -->
     <div class="container">
       <!-- <div class="cs_height_100 cs_height_lg_60"></div> -->
       <div class="cs_product_meta_info">
@@ -596,7 +660,7 @@
         </div>
       </div>
     </div>
-    <!-- feature section ends -->
+    <!-- popular choice ends -->
 
     <!-- Start Services Section -->
     <div class="container" id="about">
@@ -647,13 +711,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -1634,9 +1709,15 @@
     <!-- End Scroll Up -->
 
     <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/modal.js"></script>
     <!-- <script src="assets/js/swiper.min.js"></script> -->
     <script src="assets/js/swiper-new.js"></script>
     <script src="assets/js/odometer.js"></script>
@@ -1644,5 +1725,21 @@
     <script src="assets/js/isotope.pkg.min.js"></script>
     <script src="assets/js/gsap.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script> -->
   </body>
 </html>

@@ -9770,9 +9770,14 @@ html .ui-button.ui-state-disabled:active {
   border-radius: 5px;
 }
 .phone-icon {
-  padding: 14px;
+  padding: 12px 15px;
   border-radius: 30%;
   border: 2px solid #fd6219;
+  background-color: black;
+  color: white;
+}
+.phone-icon:hover {
+  background-color: #fd6219;
   color: white;
 }
 /* // swiper  */
@@ -9820,4 +9825,9 @@ html .ui-button.ui-state-disabled:active {
 ::selection {
   color: white;
   background: #fd6219;
+}
+
+.blog-container {
+  background-color: #171717;
+  border-radius: 10px;
 }

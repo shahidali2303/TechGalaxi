@@ -9817,3 +9817,7 @@ html .ui-button.ui-state-disabled:active {
   font-weight: 700;
   font-size: 14px;
 }
+::selection {
+  color: white;
+  background: #fd6219;
+}

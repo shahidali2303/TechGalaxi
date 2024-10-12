@@ -5560,6 +5560,11 @@ hr {
     padding-top: 170px;
   }
 }
+@media (max-width: 425px) {
+  .cs_hero {
+    padding-top: 170px;
+  }
+}
 .cs_hero.cs_style_1 .cs_hero_subtitle {
   margin-bottom: 24px;
 }
@@ -5692,6 +5697,7 @@ hr {
   max-width: 740px;
   overflow: hidden;
   border-radius: 500px;
+  /* background-color: #fff; */
 }
 @media (max-width: 1199px) {
   .cs_hero.cs_style_2 .cs_hero_img {
@@ -6008,7 +6014,7 @@ hr {
 }
 @media (max-width: 767px) {
   .cs_hero.cs_style_5 .cs_hero_top_title {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 }
 .cs_hero.cs_style_5 .cs_hero_top_title img {

@@ -1,6 +1,7 @@
 const swiper = new Swiper(".swiper-new", {
   slidesPerView: 3,
   spaceBetween: 30,
+  // mousewheel: true,
 
   a11y: {
     prevSlideMessage: "Previous slide",

@@ -35,7 +35,7 @@
     <!-- End Preloader -->
 
     <!-- Modalstart  -->
-    <div
+    <!-- <div
       class="modal fade"
       id="staticBackdrop"
       data-bs-backdrop="static"
@@ -94,8 +94,79 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Modal ends -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row no-gutters">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <img
+                  src="assets/img/modal-image.jpg"
+                  class="img-fluid"
+                  alt="Image Description"
+                />
+              </div>
+              <div
+                class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center"
+              >
+                <h5 class="pt-4">Please Enter Your Details Below</h5>
+                <form action="#">
+                  <div class="form-floating mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name"
+                    />
+                    <label for="floatingInput">Your Full Name</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="floatingNumber"
+                      placeholder="Mobile Number"
+                    />
+                    <label for="floatingNumber">Mobile Number</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Company name</label>
+                  </div>
+                  <button type="submit" class="cs_btn cs_style_1 cs_btn_accent">
+                    Schedule Call
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Start Header Section -->
     <header
@@ -500,7 +571,7 @@
                   type="button"
                   class="phone-icon"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#myModal"
                 >
                   <span><i class="fa-solid fa-phone"></i></span>
                 </button>
@@ -575,7 +646,7 @@
             <div class="cs_details_box position-relative">
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
-                  <a href="#">QuickBooks</a>
+                  <a href="#">Jhattse</a>
                   <a>₹699/year</a>
                 </div>
               </h2>
@@ -596,17 +667,16 @@
                 </div>
               </div>
               <p class="cs_image_box_subtitle mb-0 mt-1">
-                QuickBooks is a user-friendly accounting software developed by
-                Intuit that helps businesses track expenses, manage cash flow,
-                and generate invoices and financial reports. It is widely known
-                for its intuitive interface and cloud-based version, QuickBooks
-                Online, which enables real-time collaboration and remote access
-                to financial data. This software automates various accounting
-                tasks, ensuring GST compliance, calculating taxes, and
-                simplifying payroll management. QuickBooks integrates seamlessly
-                with existing systems and APIs, making it a comprehensive tool
-                for streamlining business financial operations and enhancing
-                productivity
+                Jhattse Business is a comprehensive billing and invoicing
+                software tailored for various industries such as grocery,
+                retail, restaurants, and manufacturing. It features advanced
+                billing capabilities, including digital and physical invoicing,
+                E-Way Bills, and inventory management tools like low stock
+                alerts and sales tracking. The software also simplifies order
+                management and integrates payment gateways for smooth
+                transactions. With a user-friendly interface and 24/7 customer
+                support, Jhattse enhances customer experience and provides
+                valuable business insights.
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <!-- <div>
@@ -1576,14 +1646,21 @@
       <div class="cs_fooer_main">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
               <div class="cs_footer_item">
                 <div class="cs_text_widget">
-                  <img src="assets/img/logo_white.svg" alt="Logo" />
+                  <img
+                    src="assets/img/footer-logo.png"
+                    alt="Logo"
+                    class="footer-logo"
+                  />
                 </div>
                 <ul class="cs_menu_widget cs_mp0">
-                  <li>5553 Jay Path Apt. 908</li>
-                  <li>+44 454 7800 112</li>
+                  <li>
+                    IRIS TECH PARK, 305-C, Sector 48, <br />
+                    Gurgaon - 122001, Haryana, <br />IND 8810335801
+                  </li>
+                  <li>+91 8810335801</li>
                   <li>info@zivan.net</li>
                 </ul>
               </div>
@@ -1593,33 +1670,32 @@
                 <h2 class="cs_widget_title">Services</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li>
-                    <a href="#">WP Development</a>
+                    <a href="#">Web Development</a>
                   </li>
                   <li>
-                    <a href="#">UX Research</a>
+                    <a href="#">App Development</a>
                   </li>
                   <li>
-                    <a href="#">Branding Design</a>
+                    <a href="#">Digital Marketing</a>
                   </li>
                   <li>
-                    <a href="#">Front-End Development</a>
+                    <a href="#">HR Software</a>
                   </li>
                   <li>
-                    <a href="#">Graphics Design</a>
+                    <a href="#">Billing and Invoicing</a>
                   </li>
                   <li>
-                    <a href="#">Ad Promotion</a>
+                    <a href="#">Networking devices</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-2 col-sm-6">
               <div class="cs_footer_item">
                 <h2 class="cs_widget_title">Links</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="service.html">Services</a></li>
                   <li><a href="portfolio.html">Portfolio</a></li>
                   <li><a href="blog.html"></a>Blog</li>
                   <li><a href="contact.html">Contact</a></li>
@@ -1669,14 +1745,24 @@
               </a>
             </div>
           </div>
-          <div class="cs_copyright">Copyright © 2023 Laralink.</div>
+          <div class="cs_copyright">
+            Copyright © <span id="current-year"></span>
+            <script>
+              const currentYear = new Date().getFullYear();
+              const yearElement = document.getElementById("current-year");
+              if (yearElement) {
+                yearElement.textContent = currentYear;
+              }
+            </script>
+            TechGalaxi.
+          </div>
           <div class="cs_bottom_footer_right">
             <ul class="cs_footer_links cs_mp0">
               <li>
-                <a href="">Terms of Use</a>
+                <a href="#">Terms of Use</a>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
             </ul>
           </div>

@@ -1738,10 +1738,10 @@ hr {
 }
 
 .cs_bg_filed {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .cs_vertical_middle {
@@ -9836,4 +9836,19 @@ html .ui-button.ui-state-disabled:active {
 .blog-container {
   background-color: #171717;
   border-radius: 10px;
+}
+
+/* modal  */
+.modal-content {
+  background-color: #171717; /* Dark background */
+  /* color: #ffffff; */
+}
+.modal-header,
+.modal-footer {
+  border: none; /* Remove border */
+}
+
+.footer-logo {
+  max-width: 300px;
+  height: auto;
 }

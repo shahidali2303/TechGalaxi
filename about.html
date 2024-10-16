@@ -758,15 +758,26 @@
       <div class="cs_fooer_main">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
               <div class="cs_footer_item">
                 <div class="cs_text_widget">
-                  <img src="assets/img/logo_white.svg" alt="Logo" />
+                  <img
+                    src="assets/img/footer-logo.png"
+                    alt="Logo"
+                    class="footer-logo"
+                  />
                 </div>
                 <ul class="cs_menu_widget cs_mp0">
-                  <li>5553 Jay Path Apt. 908</li>
-                  <li>+44 454 7800 112</li>
-                  <li>info@zivan.net</li>
+                  <li>
+                    IRIS TECH PARK, 305-C, Sector 48, <br />
+                    Gurgaon - 122001, Haryana, <br />IND 8810335801
+                  </li>
+                  <li><a href="tel:918810335801">+91 8810335801</a></li>
+                  <li>
+                    <a href="mailto:techgalaxi027@gmail.com"
+                      >techgalaxi027@gmail.com</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -775,33 +786,32 @@
                 <h2 class="cs_widget_title">Services</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li>
-                    <a href="service-details.html">WP Development</a>
+                    <a href="#">Web Development</a>
                   </li>
                   <li>
-                    <a href="service-details.html">UX Research</a>
+                    <a href="#">App Development</a>
                   </li>
                   <li>
-                    <a href="service-details.html">Branding Design</a>
+                    <a href="#">Digital Marketing</a>
                   </li>
                   <li>
-                    <a href="service-details.html">Front-End Development</a>
+                    <a href="#">HR Software</a>
                   </li>
                   <li>
-                    <a href="service-details.html">Graphics Design</a>
+                    <a href="#">Billing and Invoicing</a>
                   </li>
                   <li>
-                    <a href="service-details.html">Ad Promotion</a>
+                    <a href="#">Networking devices</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-2 col-sm-6">
               <div class="cs_footer_item">
                 <h2 class="cs_widget_title">Links</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="service.html">Services</a></li>
                   <li><a href="portfolio.html">Portfolio</a></li>
                   <li><a href="blog.html"></a>Blog</li>
                   <li><a href="contact.html">Contact</a></li>
@@ -851,14 +861,24 @@
               </a>
             </div>
           </div>
-          <div class="cs_copyright">Copyright © 2023 Laralink.</div>
+          <div class="cs_copyright">
+            Copyright © <span id="current-year"></span>
+            <script>
+              const currentYear = new Date().getFullYear();
+              const yearElement = document.getElementById("current-year");
+              if (yearElement) {
+                yearElement.textContent = currentYear;
+              }
+            </script>
+            TechGalaxi.
+          </div>
           <div class="cs_bottom_footer_right">
             <ul class="cs_footer_links cs_mp0">
               <li>
-                <a href="">Terms of Use</a>
+                <a href="#">Terms of Use</a>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
             </ul>
           </div>

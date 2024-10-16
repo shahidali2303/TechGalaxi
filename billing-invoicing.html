@@ -34,7 +34,6 @@
     </div>
     <!-- End Preloader -->
 
-    <!-- Modalstart  -->
     <!-- <div
       class="modal fade"
       id="staticBackdrop"
@@ -95,7 +94,8 @@
         </div>
       </div>
     </div> -->
-    <!-- Modal ends -->
+
+    <!-- Modalstart  -->
     <div
       class="modal fade"
       id="myModal"
@@ -108,7 +108,7 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="row no-gutters">
-              <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="col-lg-6 col-md-12 col-sm-12 img-container">
                 <img
                   src="assets/img/modal-image.jpg"
                   class="img-fluid"
@@ -116,57 +116,63 @@
                 />
               </div>
               <div
-                class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center"
+                class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center"
               >
-                <h5 class="pt-4">Please Enter Your Details Below</h5>
-                <form action="#">
-                  <div class="form-floating mb-4">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="name"
-                    />
-                    <label for="floatingInput">Your Full Name</label>
-                  </div>
-                  <div class="form-floating mb-4">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="name@example.com"
-                    />
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <div class="form-floating mb-4">
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="floatingNumber"
-                      placeholder="Mobile Number"
-                    />
-                    <label for="floatingNumber">Mobile Number</label>
-                  </div>
-                  <div class="form-floating mb-4">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="floatingInput"
-                      placeholder="name@example.com"
-                    />
-                    <label for="floatingInput">Company name</label>
-                  </div>
-                  <button type="submit" class="cs_btn cs_style_1 cs_btn_accent">
-                    Schedule Call
-                    <span><i class="fa-solid fa-arrow-right"></i></span>
-                  </button>
-                </form>
+                <div class="p-4">
+                  <h5 class="pt-4">Please Enter Your Details Below</h5>
+                  <form action="#">
+                    <div class="form-floating mb-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name"
+                      />
+                      <label for="floatingInput">Your Full Name</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="floatingNumber"
+                        placeholder="Mobile Number"
+                      />
+                      <label for="floatingNumber">Mobile Number</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Company name</label>
+                    </div>
+                    <button
+                      type="submit"
+                      class="cs_btn cs_style_1 cs_btn_accent"
+                    >
+                      Schedule Call
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Modal ends -->
 
     <!-- Start Header Section -->
     <header
@@ -177,14 +183,17 @@
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <a class="cs_site_branding" href="index.html">
-                <img src="assets/img/logo_white.svg" alt="Logo" />
+                <img
+                  src="assets/img/Techgalaxi_Primary_logo-01.png"
+                  alt="Logo"
+                />
               </a>
             </div>
             <div class="cs_main_header_center">
               <div class="cs_nav cs_medium cs_primary_font">
                 <ul class="cs_nav_list">
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="about.html">About</a></li>
                   <li class="menu-item-has-children">
                     <a href="#">Service</a>
                     <ul>
@@ -213,23 +222,26 @@
                       <li class="menu-item-has-children">
                         <a href="#">Hardware Categories</a>
                         <ul>
-                          <li><a href="#">Networking Devices</a></li>
-                          <li><a href="#">Biometric Devices</a></li>
+                          <li>
+                            <a href="networking-devices.html"
+                              >Networking Devices</a
+                            >
+                          </li>
                           <li><a href="#">Data Security Solutions</a></li>
                           <li><a href="#">LAN Switching Tools</a></li>
-                          <li><a href="#">Headphones With Microphones</a></li>
                         </ul>
                       </li>
                     </ul>
                   </li>
                   <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="blog-list.html">Blogs</a></li>
+                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
             </div>
             <div class="cs_main_header_right">
-              <a href="#" class="cs_btn cs_style_1 cs_btn_white"
-                >Getting Started</a
+              <a href="contact.html" class="cs_btn cs_style_1 cs_btn_white"
+                >Get Free Advise</a
               >
             </div>
           </div>
@@ -1660,8 +1672,12 @@
                     IRIS TECH PARK, 305-C, Sector 48, <br />
                     Gurgaon - 122001, Haryana, <br />IND 8810335801
                   </li>
-                  <li>+91 8810335801</li>
-                  <li>info@zivan.net</li>
+                  <li><a href="tel:918810335801">+91 8810335801</a></li>
+                  <li>
+                    <a href="mailto:techgalaxi027@gmail.com"
+                      >techgalaxi027@gmail.com</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>

@@ -37,60 +37,83 @@
     <!-- Modalstart  -->
     <div
       class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
+      id="myModal"
       tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
-      data-bs-theme="dark"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Let's Get Connected
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
           <div class="modal-body">
-            <form action="#">
-              <div class="form-floating mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name"
+            <div class="row no-gutters">
+              <div class="col-lg-6 col-md-12 col-sm-12 img-container">
+                <img
+                  src="assets/img/modal-image.jpg"
+                  class="img-fluid"
+                  alt="Image Description"
                 />
-                <label for="floatingInput">Your Full Name</label>
               </div>
-              <div class="form-floating mb-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Email address</label>
+              <div
+                class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center"
+              >
+                <div class="p-4">
+                  <h5 class="pt-4">Please Enter Your Details Below</h5>
+                  <form action="#">
+                    <div class="form-floating mb-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name"
+                      />
+                      <label for="floatingInput">Your Full Name</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="floatingNumber"
+                        placeholder="Mobile Number"
+                      />
+                      <label for="floatingNumber">Mobile Number</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Company name</label>
+                    </div>
+                    <button
+                      type="submit"
+                      class="cs_btn cs_style_1 cs_btn_accent"
+                    >
+                      Schedule Call
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger mx-2"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </form>
+                </div>
               </div>
-              <div class="form-floating mb-4">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="floatingNumber"
-                  placeholder="Mobile Number"
-                />
-                <label for="floatingNumber">Mobile Number</label>
-              </div>
-              <button type="submit" class="cs_btn cs_style_1 cs_btn_accent">
-                Send <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -468,7 +491,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">HubSpot</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -507,7 +530,7 @@
                   type="button"
                   class="cs_btn cs_style_1 me-2"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#myModal"
                 >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -517,7 +540,7 @@
                   type="button"
                   class="phone-icon"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#myModal"
                 >
                   <span><i class="fa-solid fa-phone"></i></span>
                 </button>
@@ -537,7 +560,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Salesforce CRM</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -572,13 +595,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -594,7 +628,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">CrmOne</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -641,13 +675,24 @@
                 </a>
               </div> -->
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -664,7 +709,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Leadhooper</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -697,13 +742,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -720,7 +776,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Kylas CRM </a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -754,13 +810,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -777,7 +844,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Bigin</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -814,13 +881,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -837,7 +915,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Cronberry CRM</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -870,13 +948,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -893,7 +982,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Cratio CRM </a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -925,13 +1014,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -1034,15 +1134,13 @@
 
           <div class="table-responsive table-bordered table-striped">
             <div class="text-center">
-              <div class="table-header p-3">
-                Restaurant Billing Software Cost
-              </div>
+              <div class="table-header p-3">CRM Software Cost</div>
             </div>
 
             <table class="cs_cart_table">
               <thead>
                 <tr>
-                  <th>Top Restaurant Billing Software</th>
+                  <th>Top CRM Software Cost</th>
                   <th>Starting Price</th>
                   <th>Rating</th>
                 </tr>
@@ -1050,31 +1148,31 @@
               <tbody>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>Salesforce CRM</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>$25.00 /User/Year</td>
+                  <td>4.6</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>CrmOne</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>₹3750.00 User/Month</td>
+                  <td>4.9</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>Leadhooper</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>₹499.00 /User/Month</td>
+                  <td>5.0</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>Kylas CRM</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>₹12999.00 /Month/Unlimited Users</td>
+                  <td>4.1</td>
                 </tr>
               </tbody>
             </table>
@@ -1121,17 +1219,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Working with them has been a game-changer for our
-                      business. Their design and development team took our ideas
-                      and turned them into a stunning, user-friendly website
-                      that perfectly reflects our brand.
+                      "HubSpot CRM is incredibly user-friendly and perfect for
+                      small businesses looking to streamline their sales
+                      process. The free tier offers great features, making it a
+                      valuable tool for managing customer relationships."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO of Creative Innovations</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -1153,17 +1251,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
+                      "crmOne has simplified our lead management and customer
+                      tracking with its intuitive interface. The support team is
+                      responsive, and the software is flexible enough to adapt
+                      to our specific business requirements."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -1185,113 +1283,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
+                      “Leadhopper CRM is an excellent tool for managing leads
+                      and optimizing sales processes. Its automation features
+                      save us time, and the user-friendly interface makes it
+                      easy for the team to adapt quickly."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -1352,17 +1354,16 @@
               <div class="cs_accordian active">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    01. What Features Should I Look for in Billing Software?
+                    01. Why is CRM software important for businesses?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Look for features such as automated invoicing, expense
-                    tracking, payment reminders, customizable templates,
-                    multi-currency support, and integration with other financial
-                    tools. Advanced options might include inventory management,
-                    recurring billing, and detailed reporting.
+                    CRM software helps businesses manage customer relationships
+                    by organizing interactions, tracking leads, and improving
+                    customer service. It’s vital for enhancing communication,
+                    increasing sales, and boosting customer retention.
                   </p>
                 </div>
               </div>
@@ -1370,16 +1371,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    02. How Can Billing Software Simplify Tax Compliance?
+                    02. What is the typical cost of CRM software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software can simplify tax compliance by
-                    automatically calculating taxes, generating tax reports, and
-                    ensuring accurate GST/VAT invoicing. This helps reduce
-                    errors and makes it easier to prepare for tax filing.
+                    CRM software costs vary based on features and providers.
+                    Basic plans may start from $10 to $50 per user per month,
+                    while more advanced systems can go up to $150 or more, with
+                    potential costs for customizations or integrations
                   </p>
                 </div>
               </div>
@@ -1387,17 +1388,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    03. Is It Possible to Integrate Billing Software with Other
-                    Business Tools?
+                    03. What are the key features of CRM software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Yes, many billing software solutions offer integration with
-                    accounting software, CRM systems, and e-commerce platforms.
-                    This streamlines workflows and ensures that data is
-                    consistent across all business tools.
+                    CRM software typically includes contact management, sales
+                    automation, marketing tools, customer support tracking,
+                    analytics, and reporting. Some advanced CRMs also offer
+                    AI-driven insights, workflow automation, and integration
+                    with other business systems.
                   </p>
                 </div>
               </div>
@@ -1405,16 +1406,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    04. What Are the Benefits of Cloud-Based Billing Software?
+                    04. What are the primary functions of CRM software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Cloud-based billing software offers benefits such as
-                    accessibility from anywhere with an internet connection,
-                    automatic updates, scalability, and secure data storage. It
-                    also facilitates real-time collaboration and data sharing.
+                    The main functions of CRM are managing customer data,
+                    automating sales processes, tracking leads, improving
+                    communication, and providing detailed analytics to support
+                    decision-making.
                   </p>
                 </div>
               </div>
@@ -1422,17 +1423,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    05. How Does Billing Software Enhance Financial Reporting
-                    and Analysis?
+                    05. What does CRM software help businesses accomplish?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software enhances financial reporting by providing
-                    detailed reports on income, expenses, and payment trends.
-                    This helps businesses analyze financial performance, make
-                    informed decisions, and track key metrics.
+                    CRM software enables businesses to manage customer
+                    interactions, track leads and sales, improve customer
+                    service, and build better long-term relationships with
+                    clients. It streamlines operations by centralizing customer
+                    data and automating workflows.
                   </p>
                 </div>
               </div>
@@ -1440,17 +1441,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    06. Can Billing Software Support Multiple Currencies and
-                    Languages?
+                    06. What’s the difference between ERP and CRM software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Many billing software solutions support multiple currencies
-                    and languages, which is beneficial for businesses operating
-                    internationally. This allows for seamless invoicing and
-                    payment processing across different regions.
+                    CRM (Customer Relationship Management) software focuses on
+                    customer interactions and sales, while ERP (Enterprise
+                    Resource Planning) software integrates broader business
+                    operations like finance, manufacturing, and supply chain
+                    management.
                   </p>
                 </div>
               </div>
@@ -1458,18 +1459,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    07. What Security Measures Are in Place for Billing
-                    Software?
+                    07. How do you import data into a CRM system?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software typically includes security measures such
-                    as encryption, secure user authentication, regular backups,
-                    and compliance with data protection regulations. These
-                    measures protect sensitive financial information from
-                    unauthorized access and breaches.
+                    Most CRM systems provide data import options through CSV
+                    files, Excel sheets, or API integrations. The process
+                    usually involves mapping fields from your existing data to
+                    the corresponding CRM fields.
                   </p>
                 </div>
               </div>
@@ -1477,17 +1476,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    08. How Do I Choose Between Free and Paid Billing Software
-                    Solutions?
+                    08. What modules can be included in CRM software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Free billing software may offer basic features, while paid
-                    solutions often provide advanced functionalities, better
-                    support, and scalability. Consider your business needs,
-                    budget, and the features required when making a choice.
+                    CRM software can include modules for sales tracking,
+                    customer support, marketing automation, lead management,
+                    reporting, and analytics. Some CRMs offer additional modules
+                    like social media integration and workflow automation.
                   </p>
                 </div>
               </div>
@@ -1495,21 +1493,55 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    09. Can Billing Software Help Manage Recurring Payments and
-                    Subscriptions?
+                    09. What sets free CRM software apart from paid versions?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Yes, many billing software solutions offer features for
-                    managing recurring payments and subscriptions. This includes
-                    automated billing cycles, subscription management, and
-                    automated reminders for upcoming payments
+                    Free CRM software usually offers basic features like contact
+                    management and limited reporting, while paid versions
+                    provide advanced tools like automation, integrations,
+                    customizations, and extensive support.
                   </p>
                 </div>
               </div>
               <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <div class="cs_accordian_head">
+                  <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
+                    10. Is it possible to build custom CRM software for your
+                    business?
+                  </h2>
+                  <span class="cs_accordian_toggle cs_accent_color"></span>
+                </div>
+                <div class="cs_accordian_body">
+                  <p>
+                    Yes, businesses can develop custom CRM solutions tailored to
+                    their unique requirements. Custom CRM software can be built
+                    in-house or through a third-party developer to fit specific
+                    business processes and workflows.
+                  </p>
+                </div>
+              </div>
+              <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <div class="cs_accordian_head">
+                  <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
+                    11. Why is cloud-based CRM crucial for businesses?
+                  </h2>
+                  <span class="cs_accordian_toggle cs_accent_color"></span>
+                </div>
+                <div class="cs_accordian_body">
+                  <p>
+                    Cloud-based CRM allows for real-time access to customer data
+                    from anywhere, facilitating remote work and enhancing
+                    collaboration. It also offers scalability, data security,
+                    and automatic updates without the need for complex IT
+                    infrastructure.
+                  </p>
+                </div>
+              </div>
             </div>
             <!-- .cs_accordians -->
           </div>
@@ -1602,15 +1634,26 @@
       <div class="cs_fooer_main">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
               <div class="cs_footer_item">
                 <div class="cs_text_widget">
-                  <img src="assets/img/logo_white.svg" alt="Logo" />
+                  <img
+                    src="assets/img/footer-logo.png"
+                    alt="Logo"
+                    class="footer-logo"
+                  />
                 </div>
                 <ul class="cs_menu_widget cs_mp0">
-                  <li>5553 Jay Path Apt. 908</li>
-                  <li>+44 454 7800 112</li>
-                  <li>info@zivan.net</li>
+                  <li>
+                    IRIS TECH PARK, 305-C, Sector 48, <br />
+                    Gurgaon - 122001, Haryana, <br />IND 8810335801
+                  </li>
+                  <li><a href="tel:918810335801">+91 8810335801</a></li>
+                  <li>
+                    <a href="mailto:techgalaxi027@gmail.com"
+                      >techgalaxi027@gmail.com</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -1619,35 +1662,40 @@
                 <h2 class="cs_widget_title">Services</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li>
-                    <a href="#">WP Development</a>
+                    <a href="design-and-development.html#web-development"
+                      >Web Development</a
+                    >
                   </li>
                   <li>
-                    <a href="#">UX Research</a>
+                    <a href="design-and-development.html#app-development"
+                      >App Development</a
+                    >
                   </li>
                   <li>
-                    <a href="#">Branding Design</a>
+                    <a href="design-and-development.html#digital-marketing"
+                      >Digital Marketing</a
+                    >
                   </li>
                   <li>
-                    <a href="#">Front-End Development</a>
+                    <a href="hr-software.html">HR Software</a>
                   </li>
                   <li>
-                    <a href="#">Graphics Design</a>
+                    <a href="billing-invoicing.html">Billing and Invoicing</a>
                   </li>
                   <li>
-                    <a href="#">Ad Promotion</a>
+                    <a href="networking-devices.html">Networking devices</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-2 col-sm-6">
               <div class="cs_footer_item">
                 <h2 class="cs_widget_title">Links</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="service.html">Services</a></li>
                   <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="blog.html"></a>Blog</li>
+                  <li><a href="blog-list.html"></a>Blog</li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
@@ -1695,14 +1743,24 @@
               </a>
             </div>
           </div>
-          <div class="cs_copyright">Copyright © 2023 Laralink.</div>
+          <div class="cs_copyright">
+            Copyright © <span id="current-year"></span>
+            <script>
+              const currentYear = new Date().getFullYear();
+              const yearElement = document.getElementById("current-year");
+              if (yearElement) {
+                yearElement.textContent = currentYear;
+              }
+            </script>
+            TechGalaxi.
+          </div>
           <div class="cs_bottom_footer_right">
             <ul class="cs_footer_links cs_mp0">
               <li>
-                <a href="">Terms of Use</a>
+                <a href="#">Terms of Use</a>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
             </ul>
           </div>

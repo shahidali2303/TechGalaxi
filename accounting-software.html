@@ -37,60 +37,76 @@
     <!-- Modalstart  -->
     <div
       class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
+      id="myModal"
       tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
-      data-bs-theme="dark"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Let's Get Connected
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
           <div class="modal-body">
-            <form action="#">
-              <div class="form-floating mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name"
+            <div class="row no-gutters">
+              <div class="col-lg-6 col-md-12 col-sm-12 img-container">
+                <img
+                  src="assets/img/modal-image.jpg"
+                  class="img-fluid"
+                  alt="Image Description"
                 />
-                <label for="floatingInput">Your Full Name</label>
               </div>
-              <div class="form-floating mb-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Email address</label>
+              <div
+                class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center"
+              >
+                <div class="p-4">
+                  <h5 class="pt-4">Please Enter Your Details Below</h5>
+                  <form action="#">
+                    <div class="form-floating mb-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name"
+                      />
+                      <label for="floatingInput">Your Full Name</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="floatingNumber"
+                        placeholder="Mobile Number"
+                      />
+                      <label for="floatingNumber">Mobile Number</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Company name</label>
+                    </div>
+                    <button
+                      type="submit"
+                      class="cs_btn cs_style_1 cs_btn_accent"
+                    >
+                      Schedule Call
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                  </form>
+                </div>
               </div>
-              <div class="form-floating mb-4">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="floatingNumber"
-                  placeholder="Mobile Number"
-                />
-                <label for="floatingNumber">Mobile Number</label>
-              </div>
-              <button type="submit" class="cs_btn cs_style_1 cs_btn_accent">
-                Send <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -462,7 +478,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">FreshBooks</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -495,7 +511,7 @@
                   type="button"
                   class="cs_btn cs_style_1 me-2"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#myModal"
                 >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -505,7 +521,7 @@
                   type="button"
                   class="phone-icon"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#myModal"
                 >
                   <span><i class="fa-solid fa-phone"></i></span>
                 </button>
@@ -525,7 +541,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">QuickBooks</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -555,13 +571,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -577,7 +604,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Busy Accounting Software</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -620,13 +647,24 @@
                 </a>
               </div> -->
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -643,7 +681,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Xero</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -674,13 +712,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -698,7 +747,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Wave</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -726,7 +775,7 @@
                 processes
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
-              <div>
+              <!-- <div>
                 <a href="#" class="cs_btn cs_style_1 me-2">
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -734,7 +783,7 @@
                 <a href="#" class="phone-icon me-2">
                   <span><i class="fa-solid fa-phone"></i></span>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </li>
@@ -750,7 +799,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">TallyPrime</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -782,13 +831,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -805,7 +865,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Zoho Books</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -837,7 +897,7 @@
                 business operations.
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
-              <div>
+              <!-- <div>
                 <a href="#" class="cs_btn cs_style_1 me-2">
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -845,7 +905,7 @@
                 <a href="#" class="phone-icon me-2">
                   <span><i class="fa-solid fa-phone"></i></span>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </li>
@@ -861,7 +921,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">HostBooks</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -891,13 +951,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -1000,15 +1071,13 @@
 
           <div class="table-responsive table-bordered table-striped">
             <div class="text-center">
-              <div class="table-header p-3">
-                Restaurant Billing Software Cost
-              </div>
+              <div class="table-header p-3">Accounting Software Cost</div>
             </div>
 
             <table class="cs_cart_table">
               <thead>
                 <tr>
-                  <th>Top Restaurant Billing Software</th>
+                  <th>Top Accounting Software</th>
                   <th>Starting Price</th>
                   <th>Rating</th>
                 </tr>
@@ -1016,31 +1085,31 @@
               <tbody>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>QuickBooks</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>$35.00 /Month</td>
+                  <td>4.3</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>Busy Accounting Software</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>₹5999.00 /Year</td>
+                  <td>4.2</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>TallyPrime</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>₹750.00 /Month</td>
+                  <td>4.4</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>Freshbooks</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>$8/ Month</td>
+                  <td>3.9</td>
                 </tr>
               </tbody>
             </table>
@@ -1087,17 +1156,16 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Working with them has been a game-changer for our
-                      business. Their design and development team took our ideas
-                      and turned them into a stunning, user-friendly website
-                      that perfectly reflects our brand.
+                      "QuickBooks has streamlined my invoicing and expense
+                      tracking, making financial management a breeze. The mobile
+                      app is a game-changer for accessing data on the go."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO of Creative Innovations</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -1119,17 +1187,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
+                      "TallyPrime is excellent for GST compliance and offers a
+                      user-friendly interface for managing finances. Although
+                      there was a learning curve, it's now an essential tool for
+                      my business."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -1151,113 +1219,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
+                      "Busy Accounting Software reliably handles our invoicing
+                      and inventory management needs. While its reporting
+                      features could be improved, the customer support has been
+                      very helpful."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -1318,17 +1290,18 @@
               <div class="cs_accordian active">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    01. What Features Should I Look for in Billing Software?
+                    01. What is the most suitable accounting software for small
+                    businesses?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Look for features such as automated invoicing, expense
-                    tracking, payment reminders, customizable templates,
-                    multi-currency support, and integration with other financial
-                    tools. Advanced options might include inventory management,
-                    recurring billing, and detailed reporting.
+                    The best accounting software for small businesses often
+                    includes options like QuickBooks, FreshBooks, and Xero.
+                    These platforms offer user-friendly interfaces, essential
+                    features like invoicing and expense tracking, and
+                    scalability to accommodate growth.
                   </p>
                 </div>
               </div>
@@ -1336,16 +1309,18 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    02. How Can Billing Software Simplify Tax Compliance?
+                    02. How much should small businesses expect to pay for
+                    accounting software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software can simplify tax compliance by
-                    automatically calculating taxes, generating tax reports, and
-                    ensuring accurate GST/VAT invoicing. This helps reduce
-                    errors and makes it easier to prepare for tax filing.
+                    Pricing for accounting software varies widely based on
+                    features and subscription models, typically ranging from $10
+                    to $100 per month. Many platforms also offer tiered pricing,
+                    allowing businesses to choose a plan that fits their needs
+                    and budget.
                   </p>
                 </div>
               </div>
@@ -1353,17 +1328,18 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    03. Is It Possible to Integrate Billing Software with Other
-                    Business Tools?
+                    03. Which accounting software is the easiest for beginners
+                    to navigate?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Yes, many billing software solutions offer integration with
-                    accounting software, CRM systems, and e-commerce platforms.
-                    This streamlines workflows and ensures that data is
-                    consistent across all business tools.
+                    FreshBooks is often cited as one of the easiest accounting
+                    software options for beginners due to its intuitive
+                    interface and simple navigation. It focuses on invoicing and
+                    expense tracking, making it ideal for freelancers and small
+                    business owners.
                   </p>
                 </div>
               </div>
@@ -1371,16 +1347,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    04. What Are the Benefits of Cloud-Based Billing Software?
+                    04. What key factors should be considered when selecting
+                    accounting software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Cloud-based billing software offers benefits such as
-                    accessibility from anywhere with an internet connection,
-                    automatic updates, scalability, and secure data storage. It
-                    also facilitates real-time collaboration and data sharing.
+                    When choosing accounting software, consider factors such as
+                    ease of use, feature set (invoicing, reporting, tax
+                    compliance), scalability, customer support, and integration
+                    capabilities with other tools your business uses.
                   </p>
                 </div>
               </div>
@@ -1388,17 +1365,18 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    05. How Does Billing Software Enhance Financial Reporting
-                    and Analysis?
+                    05. What type of accounting software do large corporations
+                    typically use?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software enhances financial reporting by providing
-                    detailed reports on income, expenses, and payment trends.
-                    This helps businesses analyze financial performance, make
-                    informed decisions, and track key metrics.
+                    Large companies often use enterprise-level solutions like
+                    SAP, Oracle NetSuite, and Microsoft Dynamics 365. These
+                    platforms provide comprehensive features for managing
+                    complex financial operations, compliance, and reporting at
+                    scale.
                   </p>
                 </div>
               </div>
@@ -1406,17 +1384,18 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    06. Can Billing Software Support Multiple Currencies and
-                    Languages?
+                    06. Will I incur any annual maintenance fees for accounting
+                    software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Many billing software solutions support multiple currencies
-                    and languages, which is beneficial for businesses operating
-                    internationally. This allows for seamless invoicing and
-                    payment processing across different regions.
+                    Many cloud-based accounting software options operate on a
+                    subscription model, which typically includes updates and
+                    maintenance without additional fees. However, some
+                    on-premise solutions may charge annual maintenance fees for
+                    support and updates.
                   </p>
                 </div>
               </div>
@@ -1424,18 +1403,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    07. What Security Measures Are in Place for Billing
-                    Software?
+                    07. What are the primary purposes of accounting software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software typically includes security measures such
-                    as encryption, secure user authentication, regular backups,
-                    and compliance with data protection regulations. These
-                    measures protect sensitive financial information from
-                    unauthorized access and breaches.
+                    Accounting software is used for managing financial
+                    transactions, including tracking income and expenses,
+                    generating invoices, preparing financial statements, and
+                    ensuring tax compliance. It streamlines bookkeeping
+                    processes and enhances financial reporting.
                   </p>
                 </div>
               </div>
@@ -1443,17 +1421,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    08. How Do I Choose Between Free and Paid Billing Software
-                    Solutions?
+                    08. What functionalities can I expect from accounting
+                    software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Free billing software may offer basic features, while paid
-                    solutions often provide advanced functionalities, better
-                    support, and scalability. Consider your business needs,
-                    budget, and the features required when making a choice.
+                    Common functionalities include invoicing, expense tracking,
+                    bank reconciliation, financial reporting, tax calculation,
+                    and inventory management. Many platforms also offer
+                    integrations with payment gateways and other business tools.
                   </p>
                 </div>
               </div>
@@ -1461,21 +1439,40 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    09. Can Billing Software Help Manage Recurring Payments and
-                    Subscriptions?
+                    09. Is it necessary to invest in new IT infrastructure for
+                    implementing accounting software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Yes, many billing software solutions offer features for
-                    managing recurring payments and subscriptions. This includes
-                    automated billing cycles, subscription management, and
-                    automated reminders for upcoming payments
+                    For cloud-based accounting solutions, no new IT
+                    infrastructure is typically required, as these applications
+                    are accessible via the internet. However, on-premise
+                    solutions may necessitate hardware and networking
+                    investments.
                   </p>
                 </div>
               </div>
               <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <div class="cs_accordian_head">
+                  <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
+                    10. What accounting solutions are favored by larger
+                    enterprises?
+                  </h2>
+                  <span class="cs_accordian_toggle cs_accent_color"></span>
+                </div>
+                <div class="cs_accordian_body">
+                  <p>
+                    Larger enterprises often prefer solutions like SAP, Oracle
+                    NetSuite, and Infor CloudSuite. These systems offer advanced
+                    functionalities for managing complex financial processes and
+                    can be customized to meet the unique needs of large
+                    organizations.
+                  </p>
+                </div>
+              </div>
             </div>
             <!-- .cs_accordians -->
           </div>

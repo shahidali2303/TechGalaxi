@@ -37,60 +37,76 @@
     <!-- Modalstart  -->
     <div
       class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
+      id="myModal"
       tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
-      data-bs-theme="dark"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Let's Get Connected
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
           <div class="modal-body">
-            <form action="#">
-              <div class="form-floating mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name"
+            <div class="row no-gutters">
+              <div class="col-lg-6 col-md-12 col-sm-12 img-container">
+                <img
+                  src="assets/img/modal-image.jpg"
+                  class="img-fluid"
+                  alt="Image Description"
                 />
-                <label for="floatingInput">Your Full Name</label>
               </div>
-              <div class="form-floating mb-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Email address</label>
+              <div
+                class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center"
+              >
+                <div class="p-4">
+                  <h5 class="pt-4">Please Enter Your Details Below</h5>
+                  <form action="#">
+                    <div class="form-floating mb-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name"
+                      />
+                      <label for="floatingInput">Your Full Name</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="floatingNumber"
+                        placeholder="Mobile Number"
+                      />
+                      <label for="floatingNumber">Mobile Number</label>
+                    </div>
+                    <div class="form-floating mb-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Company name</label>
+                    </div>
+                    <button
+                      type="submit"
+                      class="cs_btn cs_style_1 cs_btn_accent"
+                    >
+                      Schedule Call
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                  </form>
+                </div>
               </div>
-              <div class="form-floating mb-4">
-                <input
-                  type="number"
-                  class="form-control"
-                  id="floatingNumber"
-                  placeholder="Mobile Number"
-                />
-                <label for="floatingNumber">Mobile Number</label>
-              </div>
-              <button type="submit" class="cs_btn cs_style_1 cs_btn_accent">
-                Send <span><i class="fa-solid fa-arrow-right"></i></span>
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -466,7 +482,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">GreytHR</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -502,7 +518,7 @@
                   type="button"
                   class="cs_btn cs_style_1 me-2"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#myModal"
                 >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -512,7 +528,7 @@
                   type="button"
                   class="phone-icon"
                   data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#myModal"
                 >
                   <span><i class="fa-solid fa-phone"></i></span>
                 </button>
@@ -532,7 +548,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">KekaHR</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -565,13 +581,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -587,7 +614,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">SumoPayroll</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -631,13 +658,24 @@
                 </a>
               </div> -->
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -654,7 +692,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Zoho People</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -688,13 +726,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -711,7 +760,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Kredily</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -744,13 +793,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -767,7 +827,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">Employee Vibes</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -798,13 +858,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -821,7 +892,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">HR One</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -853,13 +924,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -876,7 +958,7 @@
               <h2 class="cs_image_box_title cs_fs_29 cs_semibold">
                 <div class="d-flex justify-content-between">
                   <a href="#">peopleHum</a>
-                  <a>₹699/year</a>
+                  <!-- <a>₹699/year</a> -->
                 </div>
               </h2>
               <div class="cs_rating cs_size_sm cs_accent_color" data-rating="4">
@@ -908,13 +990,24 @@
               </p>
               <div class="cs_height_20 cs_height_lg_20"></div>
               <div>
-                <a href="#" class="cs_btn cs_style_1 me-2">
+                <button
+                  type="button"
+                  class="cs_btn cs_style_1 me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   Get Free Demo
                   <span><i class="fa-solid fa-arrow-right"></i></span>
-                </a>
-                <a href="#" class="phone-icon me-2">
+                </button>
+
+                <button
+                  type="button"
+                  class="phone-icon"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
                   <span><i class="fa-solid fa-phone"></i></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -1017,15 +1110,13 @@
 
           <div class="table-responsive table-bordered table-striped">
             <div class="text-center">
-              <div class="table-header p-3">
-                Restaurant Billing Software Cost
-              </div>
+              <div class="table-header p-3">HR Software Cost</div>
             </div>
 
             <table class="cs_cart_table">
               <thead>
                 <tr>
-                  <th>Top Restaurant Billing Software</th>
+                  <th>Top HR Software Cost</th>
                   <th>Starting Price</th>
                   <th>Rating</th>
                 </tr>
@@ -1033,30 +1124,30 @@
               <tbody>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>greytHR</p>
                   </td>
-                  <td>$300.00</td>
+                  <td>₹3495.00 /Month</td>
+                  <td>4.6</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Keka HR</p>
+                  </td>
+                  <td>₹9999.00 /Month</td>
                   <td>4.5</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>peopleHum</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
+                  <td>$2.00 /Employee/Month</td>
+                  <td>4.8</td>
                 </tr>
                 <tr>
                   <td>
-                    <p>Vyapar Billing Software</p>
+                    <p>SummoPayroll</p>
                   </td>
-                  <td>$300.00</td>
-                  <td>4.5</td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>Vyapar Billing Software</p>
-                  </td>
-                  <td>$300.00</td>
+                  <td>₹3000 per month</td>
                   <td>4.5</td>
                 </tr>
               </tbody>
@@ -1104,17 +1195,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Working with them has been a game-changer for our
-                      business. Their design and development team took our ideas
-                      and turned them into a stunning, user-friendly website
-                      that perfectly reflects our brand.
+                      "Keeka HR has streamlined our recruitment process with its
+                      user-friendly interface and efficient onboarding features.
+                      The responsive customer support adds significant value to
+                      the overall experience."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO of Creative Innovations</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -1136,17 +1227,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
+                      "GreytHR simplifies payroll and attendance management,
+                      saving us a lot of time with its automation. The mobile
+                      app is great for employees to access their payslips
+                      easily."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -1168,113 +1259,17 @@
                     <blockquote
                       class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
                     >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
+                      "PeopleHum excels in enhancing employee engagement and
+                      performance management with its diverse features. The
+                      seamless onboarding process and supportive team have made
+                      a positive impact on our HR practices."
                     </blockquote>
-                    <div class="cs_testimonial_info">
+                    <!-- <div class="cs_testimonial_info">
                       <h3 class="cs_fs_21 cs_semibold cs_white_color">
                         Ansari Patron
                       </h3>
                       <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="cs_testimonial cs_style_1">
-                    <div class="cs_testimonial_icon">
-                      <svg
-                        width="56"
-                        height="40"
-                        viewBox="0 0 56 40"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 40H16L24 24V0H0V24H12L4 40ZM36 40H48L56 24V0H32V24H44L36 40Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                    <blockquote
-                      class="cs_testimonial_text cs_fs_21 cs_medium cs_white_color"
-                    >
-                      Zivans Motion Graphics did an excellent job on my video
-                      related projects. The motion graphics added an extra layer
-                      of polish and really brought the video to life. I highly
-                      recommend their high quality services and work.
-                    </blockquote>
-                    <div class="cs_testimonial_info">
-                      <h3 class="cs_fs_21 cs_semibold cs_white_color">
-                        Ansari Patron
-                      </h3>
-                      <p class="cs_gray_color_2">CEO at Delta</p>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -1335,17 +1330,18 @@
               <div class="cs_accordian active">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    01. What Features Should I Look for in Billing Software?
+                    01. What distinguishes offline HR management software from
+                    online HR management software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Look for features such as automated invoicing, expense
-                    tracking, payment reminders, customizable templates,
-                    multi-currency support, and integration with other financial
-                    tools. Advanced options might include inventory management,
-                    recurring billing, and detailed reporting.
+                    Offline HR software is installed on local machines, offering
+                    limited accessibility and requiring manual updates. In
+                    contrast, online HR management software is cloud-based,
+                    allowing access from anywhere with an internet connection
+                    and often includes automatic updates and scalability.
                   </p>
                 </div>
               </div>
@@ -1353,16 +1349,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    02. How Can Billing Software Simplify Tax Compliance?
+                    02. When should a business consider investing in HR system
+                    software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software can simplify tax compliance by
-                    automatically calculating taxes, generating tax reports, and
-                    ensuring accurate GST/VAT invoicing. This helps reduce
-                    errors and makes it easier to prepare for tax filing.
+                    Businesses should consider purchasing HR software when they
+                    experience challenges in managing employee data, payroll
+                    processing, compliance, or when their HR tasks become too
+                    complex for manual systems or spreadsheets.
                   </p>
                 </div>
               </div>
@@ -1370,17 +1367,18 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    03. Is It Possible to Integrate Billing Software with Other
-                    Business Tools?
+                    03. Can HR management software be integrated with existing
+                    systems?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Yes, many billing software solutions offer integration with
-                    accounting software, CRM systems, and e-commerce platforms.
-                    This streamlines workflows and ensures that data is
-                    consistent across all business tools.
+                    Yes, many HR management systems offer integration
+                    capabilities with existing software, such as payroll
+                    systems, accounting software, or ERP systems. This
+                    integration enhances data accuracy and streamlines processes
+                    across platforms.
                   </p>
                 </div>
               </div>
@@ -1388,16 +1386,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    04. What Are the Benefits of Cloud-Based Billing Software?
+                    04. Is customized HR management software available?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Cloud-based billing software offers benefits such as
-                    accessibility from anywhere with an internet connection,
-                    automatic updates, scalability, and secure data storage. It
-                    also facilitates real-time collaboration and data sharing.
+                    Many vendors offer customizable HR management solutions
+                    tailored to a company's specific needs. Customization can
+                    include unique workflows, reporting requirements, and
+                    integrations with other tools.
                   </p>
                 </div>
               </div>
@@ -1405,17 +1403,17 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    05. How Does Billing Software Enhance Financial Reporting
-                    and Analysis?
+                    05. Are there annual maintenance fees for HR software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software enhances financial reporting by providing
-                    detailed reports on income, expenses, and payment trends.
-                    This helps businesses analyze financial performance, make
-                    informed decisions, and track key metrics.
+                    Some HR software solutions may include annual maintenance
+                    fees for support and updates, especially if they are
+                    on-premise systems. However, many cloud-based solutions
+                    typically incorporate these costs into their subscription
+                    pricing.
                   </p>
                 </div>
               </div>
@@ -1423,17 +1421,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    06. Can Billing Software Support Multiple Currencies and
-                    Languages?
+                    06. What does eHRMS mean?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Many billing software solutions support multiple currencies
-                    and languages, which is beneficial for businesses operating
-                    internationally. This allows for seamless invoicing and
-                    payment processing across different regions.
+                    eHRMS stands for electronic Human Resource Management
+                    System, referring to software solutions that automate and
+                    manage HR functions electronically. It enhances efficiency
+                    and data management across HR processes.
                   </p>
                 </div>
               </div>
@@ -1441,18 +1438,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    07. What Security Measures Are in Place for Billing
-                    Software?
+                    07. Which HRIS software is widely recognized?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Billing software typically includes security measures such
-                    as encryption, secure user authentication, regular backups,
-                    and compliance with data protection regulations. These
-                    measures protect sensitive financial information from
-                    unauthorized access and breaches.
+                    Popular HRIS software includes platforms like Workday,
+                    BambooHR, and ADP. These solutions are well-regarded for
+                    their comprehensive features, user-friendly interfaces, and
+                    strong customer support.
                   </p>
                 </div>
               </div>
@@ -1460,17 +1455,16 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    08. How Do I Choose Between Free and Paid Billing Software
-                    Solutions?
+                    08. Why is HR software crucial for businesses?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Free billing software may offer basic features, while paid
-                    solutions often provide advanced functionalities, better
-                    support, and scalability. Consider your business needs,
-                    budget, and the features required when making a choice.
+                    HR software streamlines HR processes, improves data
+                    accuracy, ensures compliance with labor laws, and enhances
+                    employee engagement. It allows HR professionals to focus on
+                    strategic initiatives rather than administrative tasks.
                   </p>
                 </div>
               </div>
@@ -1478,21 +1472,52 @@
               <div class="cs_accordian">
                 <div class="cs_accordian_head">
                   <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
-                    09. Can Billing Software Help Manage Recurring Payments and
-                    Subscriptions?
+                    09. What is HR software?
                   </h2>
                   <span class="cs_accordian_toggle cs_accent_color"></span>
                 </div>
                 <div class="cs_accordian_body">
                   <p>
-                    Yes, many billing software solutions offer features for
-                    managing recurring payments and subscriptions. This includes
-                    automated billing cycles, subscription management, and
-                    automated reminders for upcoming payments
+                    HR software is a tool that automates and manages various HR
+                    tasks, including recruitment, onboarding, payroll,
+                    performance management, and employee data management. It
+                    helps streamline HR processes and improve efficiency.
                   </p>
                 </div>
               </div>
               <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <div class="cs_accordian_head">
+                  <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
+                    10. What does HRIS stand for?
+                  </h2>
+                  <span class="cs_accordian_toggle cs_accent_color"></span>
+                </div>
+                <div class="cs_accordian_body">
+                  <p>
+                    HRIS stands for Human Resource Information System, a
+                    software solution designed to manage employee data and
+                    HR-related processes efficiently.
+                  </p>
+                </div>
+              </div>
+              <!-- .cs_accordian -->
+              <div class="cs_accordian">
+                <div class="cs_accordian_head">
+                  <h2 class="cs_accordian_title cs_fs_21 cs_semibold">
+                    11. What does HCM stand for?
+                  </h2>
+                  <span class="cs_accordian_toggle cs_accent_color"></span>
+                </div>
+                <div class="cs_accordian_body">
+                  <p>
+                    HCM stands for Human Capital Management, which encompasses a
+                    broader range of HR functions, including workforce planning,
+                    talent management, and employee development, beyond just HR
+                    data management.
+                  </p>
+                </div>
+              </div>
             </div>
             <!-- .cs_accordians -->
           </div>

@@ -9816,12 +9816,14 @@ html .ui-button.ui-state-disabled:active {
 }
 .table-header {
   font-size: 20px;
+  width: 100%;
   font-weight: 700;
   background-color: #fd6219;
   color: white;
   border-radius: 10px 10px 0 0;
 }
-.list-card {
+
+.cs-recent_post .list-card {
   border: 2px solid #fd6219;
   border-radius: 10px;
   color: white;

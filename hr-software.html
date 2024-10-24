@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Laralink" />
+    <meta name="author" content="TechGalaxi" />
     <!-- Favicon Icon -->
     <link rel="icon" href="assets/img/favicon.png" />
     <!-- Site Title -->
@@ -1647,15 +1647,26 @@
       <div class="cs_fooer_main">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
               <div class="cs_footer_item">
                 <div class="cs_text_widget">
-                  <img src="assets/img/logo_white.svg" alt="Logo" />
+                  <img
+                    src="assets/img/footer-logo.png"
+                    alt="Logo"
+                    class="footer-logo"
+                  />
                 </div>
                 <ul class="cs_menu_widget cs_mp0">
-                  <li>5553 Jay Path Apt. 908</li>
-                  <li>+44 454 7800 112</li>
-                  <li>info@zivan.net</li>
+                  <li>
+                    IRIS TECH PARK, 305-C, Sector 48, <br />
+                    Gurgaon - 122001, Haryana, IND
+                  </li>
+                  <li><a href="tel:918810335801">+91 8810335801</a></li>
+                  <li>
+                    <a href="mailto:techgalaxi027@gmail.com"
+                      >techgalaxi027@gmail.com</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -1664,35 +1675,40 @@
                 <h2 class="cs_widget_title">Services</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li>
-                    <a href="#">WP Development</a>
+                    <a href="design-and-development.html#web-development"
+                      >Web Development</a
+                    >
                   </li>
                   <li>
-                    <a href="#">UX Research</a>
+                    <a href="design-and-development.html#app-development"
+                      >App Development</a
+                    >
                   </li>
                   <li>
-                    <a href="#">Branding Design</a>
+                    <a href="design-and-development.html#digital-marketing"
+                      >Digital Marketing</a
+                    >
                   </li>
                   <li>
-                    <a href="#">Front-End Development</a>
+                    <a href="hr-software.html">HR Software</a>
                   </li>
                   <li>
-                    <a href="#">Graphics Design</a>
+                    <a href="billing-invoicing.html">Billing and Invoicing</a>
                   </li>
                   <li>
-                    <a href="#">Ad Promotion</a>
+                    <a href="networking-devices.html">Networking devices</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-2 col-sm-6">
               <div class="cs_footer_item">
                 <h2 class="cs_widget_title">Links</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="service.html">Services</a></li>
                   <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="blog.html"></a>Blog</li>
+                  <li><a href="blog-list.html"></a>Blog</li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
@@ -1740,14 +1756,24 @@
               </a>
             </div>
           </div>
-          <div class="cs_copyright">Copyright © 2023 Laralink.</div>
+          <div class="cs_copyright">
+            Copyright © <span id="current-year"></span>
+            <script>
+              const currentYear = new Date().getFullYear();
+              const yearElement = document.getElementById("current-year");
+              if (yearElement) {
+                yearElement.textContent = currentYear;
+              }
+            </script>
+            TechGalaxi.
+          </div>
           <div class="cs_bottom_footer_right">
             <ul class="cs_footer_links cs_mp0">
               <li>
-                <a href="">Terms of Use</a>
+                <a href="#">Terms of Use</a>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
             </ul>
           </div>

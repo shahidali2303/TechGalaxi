@@ -115,6 +115,7 @@
                       Schedule Call
                       <span><i class="fa-solid fa-arrow-right"></i></span>
                     </button> -->
+                    <input type="hidden" name="timestamp" id="timestamp" />
                     <input
                       type="submit"
                       name="submit"
@@ -1795,6 +1796,9 @@
             Copyright © <span id="current-year"></span>
             <script>
               const currentYear = new Date().getFullYear();
+              const currentDate = Date();
+              document.getElementById("timestamp").value = currentDate;
+              console.log(currentDate);
               const yearElement = document.getElementById("current-year");
               if (yearElement) {
                 yearElement.textContent = currentYear;

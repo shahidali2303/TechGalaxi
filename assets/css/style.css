@@ -3599,6 +3599,7 @@ hr {
 
 .cs_contact_form_wrap {
   position: relative;
+  color: black;
   padding: 90px 0 110px 110px;
 }
 @media (max-width: 1400px) {
@@ -9860,6 +9861,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .conatct-form {
   padding: 10px 0px;
+  color: black !important;
 }
 .form-control {
   width: 90%;

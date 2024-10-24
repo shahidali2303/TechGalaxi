@@ -59,13 +59,16 @@
               >
                 <div class="p-4">
                   <h5 class="pt-4">Please Enter Your Details Below</h5>
-                  <form action="#">
+                  <form action="" method="post" name="contact-form">
                     <div class="form-floating mb-2">
                       <input
                         type="text"
                         class="form-control"
                         id="floatingInput"
                         placeholder="name"
+                        name="fullName"
+                        required
+                        style="color: black"
                       />
                       <label for="floatingInput">Your Full Name</label>
                     </div>
@@ -75,6 +78,9 @@
                         class="form-control"
                         id="floatingInput"
                         placeholder="name@example.com"
+                        name="email"
+                        style="color: black"
+                        required
                       />
                       <label for="floatingInput">Email address</label>
                     </div>
@@ -84,25 +90,37 @@
                         class="form-control"
                         id="floatingNumber"
                         placeholder="Mobile Number"
+                        style="color: black"
+                        name="mobile"
+                        required
                       />
                       <label for="floatingNumber">Mobile Number</label>
                     </div>
                     <div class="form-floating mb-2">
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="floatingInput"
-                        placeholder="name@example.com"
+                        placeholder="Your Message"
+                        name="description"
+                        style="color: black"
+                        required
                       />
-                      <label for="floatingInput">Company name</label>
+                      <label for="floatingInput">Project Description</label>
                     </div>
-                    <button
+                    <!-- <button
                       type="submit"
                       class="cs_btn cs_style_1 cs_btn_accent"
                     >
                       Schedule Call
                       <span><i class="fa-solid fa-arrow-right"></i></span>
-                    </button>
+                    </button> -->
+                    <input
+                      type="submit"
+                      name="submit"
+                      id="submit"
+                      class="cs_btn cs_style_1 cs_btn_accent"
+                    />
                     <button
                       type="button"
                       class="btn btn-secondary mx-2"
@@ -1800,6 +1818,7 @@
     <!-- End Scroll Up -->
 
     <!-- Script -->
+    <script src="assets/js/form-data.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

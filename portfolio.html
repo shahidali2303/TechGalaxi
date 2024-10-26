@@ -474,13 +474,32 @@
                     We make sure to only send emails that are noteworthy and
                     pertinent to the recipient.
                   </div>
-                  <form action="#" class="cs_newsletter_form">
+                  <form
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    class="cs_newsletter_form"
+                  >
+                    <!-- Replace with your Access Key -->
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="78557573-65e2-4f26-a4b0-f8e9c1d785ee"
+                    />
                     <input
                       type="email"
+                      name="email"
                       class="cs_newsletter_input"
                       placeholder="Email address"
                     />
-                    <button class="cs_btn cs_style_1">
+                    <!-- Honeypot Spam Protection -->
+                    <input
+                      type="checkbox"
+                      name="botcheck"
+                      class="hidden"
+                      style="display: none"
+                    />
+
+                    <button type="submit" class="cs_btn cs_style_1">
                       Submit
                       <span><i class="fa-solid fa-arrow-right"></i></span>
                     </button>
@@ -513,6 +532,9 @@
             Copyright © <span id="current-year"></span>
             <script>
               const currentYear = new Date().getFullYear();
+              const currentDate = Date();
+              document.getElementById("timestamp").value = currentDate;
+              console.log(currentDate);
               const yearElement = document.getElementById("current-year");
               if (yearElement) {
                 yearElement.textContent = currentYear;

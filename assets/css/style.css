@@ -9859,6 +9859,11 @@ html .ui-button.ui-state-disabled:active {
   /* justify-content: center; */
   /* align-items: center; */
 }
+@media screen and (max-width: 426px) {
+  .img-container {
+    display: none;
+  }
+}
 .conatct-form {
   padding: 10px 0px;
   color: black !important;

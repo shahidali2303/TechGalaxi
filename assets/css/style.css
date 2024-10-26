@@ -9887,7 +9887,7 @@ html .ui-button.ui-state-disabled:active {
   }
 }
 
-.whats-app {
+/* .whats-app {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -9909,10 +9909,51 @@ html .ui-button.ui-state-disabled:active {
   .whats-app {
     display: none;
   }
-}
+} */
 .brand-img {
   border-radius: 10px;
   display: block;
   width: 100%;
   height: auto;
+}
+.contact-heading {
+  padding-top: 80px;
+}
+
+/* whatsapp and phone icons  */
+.icon-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.whatsapp {
+  background-color: #25d366;
+  color: white !important;
+}
+
+.phone {
+  background-color: #34b7f1;
+  color: white !important;
+}
+
+/* Optional: Add hover effect */
+.icon:hover {
+  opacity: 0.8;
 }

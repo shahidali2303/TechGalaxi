@@ -9912,4 +9912,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .brand-img {
   border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
 }

@@ -9905,3 +9905,6 @@ html .ui-button.ui-state-disabled:active {
     display: none;
   }
 }
+.brand-img {
+  border-radius: 10px;
+}

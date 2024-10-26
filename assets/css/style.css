@@ -3669,8 +3669,8 @@ hr {
   height: 100%;
   width: 100%;
   border: none;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%); */
+  /* filter: grayscale(100%); */
 }
 
 .cs_category {
